@@ -1,0 +1,249 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>Security Report - youtube.com</title>
+  <style>
+    body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+        background-color: #f8f9fa;
+        line-height: 1.6;
+    }
+    .header {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        padding: 20px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .header h1 { margin: 0; font-size: 2.0em; }
+    .vulnerability-summary, .port-analysis, .main-data {
+        background: white; padding: 20px; border-radius: 10px; margin-bottom: 20px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    .port-table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+    .port-table th, .port-table td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+    .port-table th { background-color: #f2f2f2; font-weight: bold; }
+    h2, h3 { color: #333; border-bottom: 2px solid #667eea; padding-bottom: 5px; }
+    table { border-collapse: collapse; width: 100%; }
+    table, th, td { border: 1px solid #ddd; }
+    th, td { padding: 12px; vertical-align: top; }
+    tr:nth-child(even){ background-color: #f9f9f9; }
+    .section { width: 220px; font-weight: bold; background: #e9ecef; }
+    pre { margin: 0; font-family: 'Courier New', monospace; font-size: 12px; white-space: pre-wrap; word-wrap: break-word; }
+    ul, ol { margin: 10px 0; padding-left: 20px; }
+    .risk-breakdown ul { display: flex; flex-wrap: wrap; list-style: none; padding: 0; }
+    .risk-breakdown li { margin: 5px 15px 5px 0; padding: 5px 10px; background: #f8f9fa; border-radius: 5px; border-left: 4px solid #667eea; }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>Security Assessment Report</h1>
+    <h2>youtube.com</h2>
+    <p>Generated: 2025-08-30_16-32-47</p>
+  </div>
+
+  
+    <div class="vulnerability-summary">
+        <h2>Security Assessment</h2>
+        <div class="risk-level" style="background-color: #ffc107; color: white; padding: 10px; border-radius: 5px; margin: 10px 0;">
+            <strong>Overall Risk Level: MEDIUM</strong>
+            <span style="margin-left: 20px;">Risk Score: 5/10</span>
+        </div>
+        <div class="risk-breakdown">
+            <h3>Risk Breakdown:</h3>
+            <ul>
+                <li>Critical: 0 issues</li>
+                <li>High: 0 issues</li>
+                <li>Medium: 1 issues</li>
+                <li>Low: 1 issues</li>
+            </ul>
+        </div>
+        <div class="vulnerabilities">
+            <h3>Identified Vulnerabilities:</h3>
+            <ul>
+    <li><strong>Port 80 (HTTP) - MEDIUM RISK:</strong><ul><li>Unencrypted data transmission</li><li>Session hijacking</li><li>Man-in-the-middle attacks</li></ul></li><li><strong>Port 443 (HTTPS) - LOW RISK:</strong><ul><li>Weak SSL/TLS configuration</li><li>Outdated certificates</li><li>Cipher suite vulnerabilities</li></ul></li><li>Information disclosure via server header</li>
+            </ul>
+        </div>
+        <div class="recommendations">
+            <h3>🔧 Security Recommendations:</h3>
+            <ol>
+    <li>Port 443 (HTTPS): Strong cipher suites</li><li>Port 443 (HTTPS): Regular certificate updates</li><li>Port 443 (HTTPS): Use TLS 1.2+</li><li>Port 80 (HTTP): Redirect to HTTPS</li><li>Port 80 (HTTP): Use secure headers</li><li>Remove or obfuscate server header</li><li>Port 443 (HTTPS): HSTS implementation</li><li>Port 80 (HTTP): Implement HSTS</li>
+            </ol>
+        </div>
+    </div>
+    
+
+  
+    <div class="port-analysis">
+        <h3>Detailed Port Analysis:</h3>
+        <table class="port-table">
+            <thead>
+                <tr><th>Port</th><th>Service</th><th>Risk Level</th><th>Common Vulnerabilities</th></tr>
+            </thead>
+            <tbody>
+    
+            <tr>
+                <td>80</td>
+                <td>HTTP</td>
+                <td>MEDIUM</td>
+                <td>Unencrypted data, session hijacking</td>
+            </tr>
+            
+            <tr>
+                <td>443</td>
+                <td>HTTPS</td>
+                <td>LOW</td>
+                <td>Weak SSL/TLS config</td>
+            </tr>
+            
+            </tbody>
+        </table>
+    </div>
+    
+
+  <div class="main-data">
+    <h2>Detailed Scan Results</h2>
+    <table>
+      <thead>
+        <tr><th>Section</th><th>Data</th></tr>
+      </thead>
+      <tbody>
+        <tr><td class='section'>IP Address</td><td><pre>&quot;142.250.193.142&quot;</pre></td></tr><tr><td class='section'>WHOIS Information</td><td><pre>{
+  &quot;Domain&quot;: &quot;youtube.com&quot;,
+  &quot;Registrar&quot;: &quot;MarkMonitor, Inc.&quot;,
+  &quot;Creation Date&quot;: &quot;2005-02-15 05:13:12&quot;,
+  &quot;Expiration Date&quot;: &quot;2026-02-15 05:13:12&quot;,
+  &quot;Name Servers&quot;: [
+    &quot;NS1.GOOGLE.COM&quot;,
+    &quot;NS2.GOOGLE.COM&quot;,
+    &quot;NS3.GOOGLE.COM&quot;,
+    &quot;NS4.GOOGLE.COM&quot;
+  ],
+  &quot;Status&quot;: [
+    &quot;clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited&quot;,
+    &quot;clientTransferProhibited https://icann.org/epp#clientTransferProhibited&quot;,
+    &quot;clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited&quot;,
+    &quot;serverDeleteProhibited https://icann.org/epp#serverDeleteProhibited&quot;,
+    &quot;serverTransferProhibited https://icann.org/epp#serverTransferProhibited&quot;,
+    &quot;serverUpdateProhibited https://icann.org/epp#serverUpdateProhibited&quot;,
+    &quot;clientUpdateProhibited (https://www.icann.org/epp#clientUpdateProhibited)&quot;,
+    &quot;clientTransferProhibited (https://www.icann.org/epp#clientTransferProhibited)&quot;,
+    &quot;clientDeleteProhibited (https://www.icann.org/epp#clientDeleteProhibited)&quot;,
+    &quot;serverUpdateProhibited (https://www.icann.org/epp#serverUpdateProhibited)&quot;,
+    &quot;serverTransferProhibited (https://www.icann.org/epp#serverTransferProhibited)&quot;,
+    &quot;serverDeleteProhibited (https://www.icann.org/epp#serverDeleteProhibited)&quot;
+  ]
+}</pre></td></tr><tr><td class='section'>DNS Records</td><td><pre>{
+  &quot;A&quot;: [
+    &quot;142.250.193.142&quot;
+  ],
+  &quot;MX&quot;: [
+    &quot;0 smtp.google.com.&quot;
+  ],
+  &quot;NS&quot;: [
+    &quot;ns2.google.com.&quot;,
+    &quot;ns1.google.com.&quot;,
+    &quot;ns3.google.com.&quot;,
+    &quot;ns4.google.com.&quot;
+  ],
+  &quot;TXT&quot;: [
+    &quot;\&quot;v=spf1 include:google.com mx -all\&quot;&quot;,
+    &quot;\&quot;google-site-verification=QtQWEwHWM8tHiJ4s-jJWzEQrD_fF3luPnpzNDH-Nw-w\&quot;&quot;,
+    &quot;\&quot;facebook-domain-verification=64jdes7le4h7e7lfpi22rijygx58j1\&quot;&quot;
+  ]
+}</pre></td></tr><tr><td class='section'>Subdomain Enumeration</td><td><pre>[
+  &quot;www.youtube.com&quot;
+]</pre></td></tr><tr><td class='section'>Port Scan Results</td><td><pre>{
+  &quot;open_ports&quot;: [
+    80,
+    443
+  ]
+}</pre></td></tr><tr><td class='section'>IP Geolocation Info</td><td><pre>{
+  &quot;ip&quot;: &quot;142.250.193.142&quot;,
+  &quot;hostname&quot;: &quot;tzdelb-at-in-f14.1e100.net&quot;,
+  &quot;city&quot;: &quot;Delhi&quot;,
+  &quot;region&quot;: &quot;Delhi&quot;,
+  &quot;country&quot;: &quot;IN&quot;,
+  &quot;loc&quot;: &quot;28.6519,77.2315&quot;,
+  &quot;org&quot;: &quot;AS15169 Google LLC&quot;,
+  &quot;postal&quot;: &quot;110001&quot;,
+  &quot;timezone&quot;: &quot;Asia/Kolkata&quot;,
+  &quot;readme&quot;: &quot;https://ipinfo.io/missingauth&quot;
+}</pre></td></tr><tr><td class='section'>SSL Certificate Info</td><td><pre>{
+  &quot;Valid From&quot;: &quot;Aug 11 19:21:11 2025 GMT&quot;,
+  &quot;Valid To&quot;: &quot;Nov  3 19:21:10 2025 GMT&quot;,
+  &quot;Subject&quot;: [
+    [
+      [
+        &quot;commonName&quot;,
+        &quot;*.google.com&quot;
+      ]
+    ]
+  ],
+  &quot;Issuer&quot;: [
+    [
+      [
+        &quot;countryName&quot;,
+        &quot;US&quot;
+      ]
+    ],
+    [
+      [
+        &quot;organizationName&quot;,
+        &quot;Google Trust Services&quot;
+      ]
+    ],
+    [
+      [
+        &quot;commonName&quot;,
+        &quot;WR2&quot;
+      ]
+    ]
+  ]
+}</pre></td></tr><tr><td class='section'>Technology Detection</td><td><pre>&quot;Technology detection not implemented (suggest Wappalyzer / whatweb API)&quot;</pre></td></tr><tr><td class='section'>HTTP Headers</td><td><pre>{
+  &quot;Content-Type&quot;: &quot;text/html; charset=utf-8&quot;,
+  &quot;X-Content-Type-Options&quot;: &quot;nosniff&quot;,
+  &quot;Cache-Control&quot;: &quot;no-cache, no-store, max-age=0, must-revalidate&quot;,
+  &quot;Pragma&quot;: &quot;no-cache&quot;,
+  &quot;Expires&quot;: &quot;Mon, 01 Jan 1990 00:00:00 GMT&quot;,
+  &quot;Date&quot;: &quot;Sat, 30 Aug 2025 11:07:20 GMT&quot;,
+  &quot;Strict-Transport-Security&quot;: &quot;max-age=31536000&quot;,
+  &quot;X-Frame-Options&quot;: &quot;SAMEORIGIN&quot;,
+  &quot;Cross-Origin-Opener-Policy&quot;: &quot;same-origin-allow-popups; report-to=\&quot;youtube_main\&quot;&quot;,
+  &quot;Report-To&quot;: &quot;{\&quot;group\&quot;:\&quot;youtube_main\&quot;,\&quot;max_age\&quot;:2592000,\&quot;endpoints\&quot;:[{\&quot;url\&quot;:\&quot;https://csp.withgoogle.com/csp/report-to/youtube_main\&quot;}]}&quot;,
+  &quot;Content-Security-Policy&quot;: &quot;require-trusted-types-for &#39;script&#39;&quot;,
+  &quot;Origin-Trial&quot;: &quot;AmhMBR6zCLzDDxpW+HfpP67BqwIknWnyMOXOQGfzYswFmJe+fgaI6XZgAzcxOrzNtP7hEDsOo1jdjFnVr2IdxQ4AAAB4eyJvcmlnaW4iOiJodHRwczovL3lvdXR1YmUuY29tOjQ0MyIsImZlYXR1cmUiOiJXZWJWaWV3WFJlcXVlc3RlZFdpdGhEZXByZWNhdGlvbiIsImV4cGlyeSI6MTc1ODA2NzE5OSwiaXNTdWJkb21haW4iOnRydWV9&quot;,
+  &quot;Permissions-Policy&quot;: &quot;ch-ua-arch=*, ch-ua-bitness=*, ch-ua-full-version=*, ch-ua-full-version-list=*, ch-ua-model=*, ch-ua-wow64=*, ch-ua-form-factors=*, ch-ua-platform=*, ch-ua-platform-version=*&quot;,
+  &quot;reporting-endpoints&quot;: &quot;default=\&quot;/web-reports?context=eJwNyl1IU2Ecx3Gf_aLmOWfnnOf_iFEaDZOibLImzl4sK8lCMoZWSLPmS5uJutna1iK7iSAEibroxYpBNymKEl0IoWYQIdRFMLWLcgkTKksyL1qilp2Lz82Xr7SISWsz8622stxjfvbs2kVWsy3Ijry_xDrLQiz1NMT6h0Jszhph7pwIezAZYS3TUbY8E2UxvdoU3VhtGjojweeT8LtLwsKUhOi8BHeejPFyGXMnZDTXyBjsljH0XEbiq4ywW8GvWgWFYQWBlIJZlwUjXRbExy2oS1qw86SK4k4VPS9UuMZU3DE0rqj4-VeFc7-GgaMaIl4NckTDww4Nu-5rMD_RsP6thpFcHeZaHZIh_kjH1B8d-5Z0-Fd0nBUc4R0czr0cN0o4Hp_iSHg4Kho52tuNZjh8i-PAPY7RXg5rH8enfo6sAY7VlxxigiN7liO5yHHhH8ftNIKaTljIILRuIHzZTigoIHSXEj6WEVbLCZVVhAo3oc1DcF4lKNcJi4Z1HUaPEW72ED4PE16PEorjhLEPhJkE4VCSUGpwzxMyU4Rhgz1NgJsEKg3BNQJKusCELHAuQ2ApU-B4loCeLVC1SeDgZoE-w2mrwPctAq6txpcnECsSWC4RuFsmQIr52-C7N2v1Vz-mV0w5tiuBcChc782_7K23-YIBf8jm9Z-3NQSbQk0NdS0eh91RaN_tKMq37_G02f8DIpmhzw\&quot;&quot;,
+  &quot;document-policy&quot;: &quot;include-js-call-stacks-in-crash-reports&quot;,
+  &quot;P3P&quot;: &quot;CP=\&quot;This is not a P3P policy! See http://support.google.com/accounts/answer/151657?hl=en-GB for more info.\&quot;&quot;,
+  &quot;Content-Encoding&quot;: &quot;gzip&quot;,
+  &quot;Server&quot;: &quot;ESF&quot;,
+  &quot;X-XSS-Protection&quot;: &quot;0&quot;,
+  &quot;Set-Cookie&quot;: &quot;GPS=1; Domain=.youtube.com; Expires=Sat, 30-Aug-2025 11:37:20 GMT; Path=/; Secure; HttpOnly, YSC=Ogp5fMn9b4o; Domain=.youtube.com; Path=/; Secure; HttpOnly; SameSite=none, __Secure-ROLLOUT_TOKEN=CMq-tafL9djJrgEQ-9mso7KyjwMY-9mso7KyjwM%3D; Domain=youtube.com; Expires=Thu, 26-Feb-2026 11:07:20 GMT; Path=/; Secure; HttpOnly; SameSite=none; Partitioned, __Secure-YEC=; Domain=.youtube.com; Expires=Sun, 04-Dec-2022 11:07:20 GMT; Path=/; Secure; HttpOnly; SameSite=lax, VISITOR_INFO1_LIVE=Ynv1SddG7pw; Domain=.youtube.com; Expires=Thu, 26-Feb-2026 11:07:20 GMT; Path=/; Secure; HttpOnly; SameSite=none, VISITOR_PRIVACY_METADATA=CgJJThIEGgAgIw%3D%3D; Domain=.youtube.com; Expires=Thu, 26-Feb-2026 11:07:20 GMT; Path=/; Secure; HttpOnly; SameSite=none&quot;,
+  &quot;Alt-Svc&quot;: &quot;h3=\&quot;:443\&quot;; ma=2592000,h3-29=\&quot;:443\&quot;; ma=2592000&quot;,
+  &quot;Transfer-Encoding&quot;: &quot;chunked&quot;
+}</pre></td></tr><tr><td class='section'>Directory Bruteforce Results</td><td><pre>[
+  &quot;http://youtube.com/uploads&quot;,
+  &quot;http://youtube.com/backup&quot;,
+  &quot;http://youtube.com/config&quot;
+]</pre></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div style="margin-top: 30px; padding: 20px; background: #fff3cd; border-radius: 10px;">
+    <h3>Important Notes:</h3>
+    <ul>
+      <li>This report is for educational and authorized security testing purposes only</li>
+      <li>Always obtain proper authorization before conducting security assessments</li>
+      <li>Vulnerabilities identified require manual verification and testing</li>
+      <li>Implement security measures in a test environment before production deployment</li>
+      <li>Regular security assessments and updates are recommended</li>
+    </ul>
+  </div>
+</body>
+</html>

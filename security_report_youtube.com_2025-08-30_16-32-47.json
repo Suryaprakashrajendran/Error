@@ -1,0 +1,135 @@
+{
+  "IP Address": "142.250.193.142",
+  "WHOIS Information": {
+    "Domain": "youtube.com",
+    "Registrar": "MarkMonitor, Inc.",
+    "Creation Date": "2005-02-15 05:13:12",
+    "Expiration Date": "2026-02-15 05:13:12",
+    "Name Servers": [
+      "NS1.GOOGLE.COM",
+      "NS2.GOOGLE.COM",
+      "NS3.GOOGLE.COM",
+      "NS4.GOOGLE.COM"
+    ],
+    "Status": [
+      "clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited",
+      "clientTransferProhibited https://icann.org/epp#clientTransferProhibited",
+      "clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited",
+      "serverDeleteProhibited https://icann.org/epp#serverDeleteProhibited",
+      "serverTransferProhibited https://icann.org/epp#serverTransferProhibited",
+      "serverUpdateProhibited https://icann.org/epp#serverUpdateProhibited",
+      "clientUpdateProhibited (https://www.icann.org/epp#clientUpdateProhibited)",
+      "clientTransferProhibited (https://www.icann.org/epp#clientTransferProhibited)",
+      "clientDeleteProhibited (https://www.icann.org/epp#clientDeleteProhibited)",
+      "serverUpdateProhibited (https://www.icann.org/epp#serverUpdateProhibited)",
+      "serverTransferProhibited (https://www.icann.org/epp#serverTransferProhibited)",
+      "serverDeleteProhibited (https://www.icann.org/epp#serverDeleteProhibited)"
+    ]
+  },
+  "DNS Records": {
+    "A": [
+      "142.250.193.142"
+    ],
+    "MX": [
+      "0 smtp.google.com."
+    ],
+    "NS": [
+      "ns2.google.com.",
+      "ns1.google.com.",
+      "ns3.google.com.",
+      "ns4.google.com."
+    ],
+    "TXT": [
+      "\"v=spf1 include:google.com mx -all\"",
+      "\"google-site-verification=QtQWEwHWM8tHiJ4s-jJWzEQrD_fF3luPnpzNDH-Nw-w\"",
+      "\"facebook-domain-verification=64jdes7le4h7e7lfpi22rijygx58j1\""
+    ]
+  },
+  "Subdomain Enumeration": [
+    "www.youtube.com"
+  ],
+  "Port Scan Results": {
+    "open_ports": [
+      80,
+      443
+    ]
+  },
+  "IP Geolocation Info": {
+    "ip": "142.250.193.142",
+    "hostname": "tzdelb-at-in-f14.1e100.net",
+    "city": "Delhi",
+    "region": "Delhi",
+    "country": "IN",
+    "loc": "28.6519,77.2315",
+    "org": "AS15169 Google LLC",
+    "postal": "110001",
+    "timezone": "Asia/Kolkata",
+    "readme": "https://ipinfo.io/missingauth"
+  },
+  "SSL Certificate Info": {
+    "Valid From": "Aug 11 19:21:11 2025 GMT",
+    "Valid To": "Nov  3 19:21:10 2025 GMT",
+    "Subject": [
+      [
+        [
+          "commonName",
+          "*.google.com"
+        ]
+      ]
+    ],
+    "Issuer": [
+      [
+        [
+          "countryName",
+          "US"
+        ]
+      ],
+      [
+        [
+          "organizationName",
+          "Google Trust Services"
+        ]
+      ],
+      [
+        [
+          "commonName",
+          "WR2"
+        ]
+      ]
+    ]
+  },
+  "Technology Detection": "Technology detection not implemented (suggest Wappalyzer / whatweb API)",
+  "HTTP Headers": {
+    "Content-Type": "text/html; charset=utf-8",
+    "X-Content-Type-Options": "nosniff",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "Mon, 01 Jan 1990 00:00:00 GMT",
+    "Date": "Sat, 30 Aug 2025 11:07:20 GMT",
+    "Strict-Transport-Security": "max-age=31536000",
+    "X-Frame-Options": "SAMEORIGIN",
+    "Cross-Origin-Opener-Policy": "same-origin-allow-popups; report-to=\"youtube_main\"",
+    "Report-To": "{\"group\":\"youtube_main\",\"max_age\":2592000,\"endpoints\":[{\"url\":\"https://csp.withgoogle.com/csp/report-to/youtube_main\"}]}",
+    "Content-Security-Policy": "require-trusted-types-for 'script'",
+    "Origin-Trial": "AmhMBR6zCLzDDxpW+HfpP67BqwIknWnyMOXOQGfzYswFmJe+fgaI6XZgAzcxOrzNtP7hEDsOo1jdjFnVr2IdxQ4AAAB4eyJvcmlnaW4iOiJodHRwczovL3lvdXR1YmUuY29tOjQ0MyIsImZlYXR1cmUiOiJXZWJWaWV3WFJlcXVlc3RlZFdpdGhEZXByZWNhdGlvbiIsImV4cGlyeSI6MTc1ODA2NzE5OSwiaXNTdWJkb21haW4iOnRydWV9",
+    "Permissions-Policy": "ch-ua-arch=*, ch-ua-bitness=*, ch-ua-full-version=*, ch-ua-full-version-list=*, ch-ua-model=*, ch-ua-wow64=*, ch-ua-form-factors=*, ch-ua-platform=*, ch-ua-platform-version=*",
+    "reporting-endpoints": "default=\"/web-reports?context=eJwNyl1IU2Ecx3Gf_aLmOWfnnOf_iFEaDZOibLImzl4sK8lCMoZWSLPmS5uJutna1iK7iSAEibroxYpBNymKEl0IoWYQIdRFMLWLcgkTKksyL1qilp2Lz82Xr7SISWsz8622stxjfvbs2kVWsy3Ijry_xDrLQiz1NMT6h0Jszhph7pwIezAZYS3TUbY8E2UxvdoU3VhtGjojweeT8LtLwsKUhOi8BHeejPFyGXMnZDTXyBjsljH0XEbiq4ywW8GvWgWFYQWBlIJZlwUjXRbExy2oS1qw86SK4k4VPS9UuMZU3DE0rqj4-VeFc7-GgaMaIl4NckTDww4Nu-5rMD_RsP6thpFcHeZaHZIh_kjH1B8d-5Z0-Fd0nBUc4R0czr0cN0o4Hp_iSHg4Kho52tuNZjh8i-PAPY7RXg5rH8enfo6sAY7VlxxigiN7liO5yHHhH8ftNIKaTljIILRuIHzZTigoIHSXEj6WEVbLCZVVhAo3oc1DcF4lKNcJi4Z1HUaPEW72ED4PE16PEorjhLEPhJkE4VCSUGpwzxMyU4Rhgz1NgJsEKg3BNQJKusCELHAuQ2ApU-B4loCeLVC1SeDgZoE-w2mrwPctAq6txpcnECsSWC4RuFsmQIr52-C7N2v1Vz-mV0w5tiuBcChc782_7K23-YIBf8jm9Z-3NQSbQk0NdS0eh91RaN_tKMq37_G02f8DIpmhzw\"",
+    "document-policy": "include-js-call-stacks-in-crash-reports",
+    "P3P": "CP=\"This is not a P3P policy! See http://support.google.com/accounts/answer/151657?hl=en-GB for more info.\"",
+    "Content-Encoding": "gzip",
+    "Server": "ESF",
+    "X-XSS-Protection": "0",
+    "Set-Cookie": "GPS=1; Domain=.youtube.com; Expires=Sat, 30-Aug-2025 11:37:20 GMT; Path=/; Secure; HttpOnly, YSC=Ogp5fMn9b4o; Domain=.youtube.com; Path=/; Secure; HttpOnly; SameSite=none, __Secure-ROLLOUT_TOKEN=CMq-tafL9djJrgEQ-9mso7KyjwMY-9mso7KyjwM%3D; Domain=youtube.com; Expires=Thu, 26-Feb-2026 11:07:20 GMT; Path=/; Secure; HttpOnly; SameSite=none; Partitioned, __Secure-YEC=; Domain=.youtube.com; Expires=Sun, 04-Dec-2022 11:07:20 GMT; Path=/; Secure; HttpOnly; SameSite=lax, VISITOR_INFO1_LIVE=Ynv1SddG7pw; Domain=.youtube.com; Expires=Thu, 26-Feb-2026 11:07:20 GMT; Path=/; Secure; HttpOnly; SameSite=none, VISITOR_PRIVACY_METADATA=CgJJThIEGgAgIw%3D%3D; Domain=.youtube.com; Expires=Thu, 26-Feb-2026 11:07:20 GMT; Path=/; Secure; HttpOnly; SameSite=none",
+    "Alt-Svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+    "Transfer-Encoding": "chunked"
+  },
+  "Directory Bruteforce Results": [
+    "http://youtube.com/uploads",
+    "http://youtube.com/backup",
+    "http://youtube.com/config"
+  ],
+  "_meta": {
+    "target": "youtube.com",
+    "generated_at": "2025-08-30_16-32-47"
+  }
+}
